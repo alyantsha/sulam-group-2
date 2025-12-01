@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-cream min-h-screen text-black font-sans">
+  <div class="bg-cream min-h-screen text-black font-sans px-8">
     <!-- Navigation -->
     <nav
       class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-teal-200"
@@ -40,9 +40,9 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="min-h-screen flex items-center justify-center px-8 py-20"
+      class="flex items-center justify-center py-10 px-20"
     >
-      <div class="max-w-4xl mx-auto text-center space-y-8">
+      <div class="max-w-4xl mx-auto text-center space-y-8 px-8">
         <div class="space-y-4">
           <h1 class="text-xl text-teal-600 font-bold">
             RISUS PRAESENT VULPUTATE
@@ -77,17 +77,18 @@
             <p>Mauris Fermentum Praesent</p>
           </div>
         </div>
-        <div class="pt-12">
-          <div
+        <div
             class="w-full sm:h-80 bg-teal-500 rounded-full py-4 px-8 flex items-center justify-between"
           >
             <p class="font-bold">Lorem Ipsum</p>
             <Icon name="mdi-arrow-right" />
           </div>
-        </div>
-        <div class="pt-2">
+      </div>
+    </section>
+    <section>
+        <div >
           <div class="w-full bg-teal-600 rounded-3xl p-8">
-            <SvgoIcon name="icon-1" />
+            <SvgoIcon name="icon-1" class="max-w-full" />
             <h1 class="text-4xl font-bold">
               Phasellus a vitae iaculis magna eleifend pulvinar velit odio.
             </h1>
@@ -107,7 +108,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-2 bg-black rounded-3xl py-8 px-10">
+        <div class="mt-8 bg-black rounded-3xl py-8 px-10">
           <p class="text-teal-500 text-center tracking-wider text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             euismod, nunc ut.
@@ -158,7 +159,7 @@
             <p class="text-start font-light">Magna Consectetur Leo.</p>
           </div>
         </div>
-        <div class="mt-2 bg-white rounded-4xl p-8">
+        <div class="mt-8 bg-white rounded-4xl p-8">
           <img class="w-40 h-40 rounded-full mx-auto" src="" alt="" />
           <p class="text-3xl mt-8 font-bold tracking-wider">
             What our <br />
@@ -188,14 +189,14 @@
             </button>
           </div>
         </div>
-        <div class="mt-2 bg-white rounded-4xl p-8">
-          <SvgoIcon name="hero-2" />
+        <div class="mt-8 bg-white rounded-4xl p-8">
+          <SvgoIcon name="hero-2" class="object-contain" />
           <h1 class="text-4xl font-bold">
             Cursus Integer <br />
             consequat <br />
             Tristique.
           </h1>
-          <div class="flex items-center flex-col gap-4 mt-8">
+          <div class="flex items-center justify-center flex-col gap-4 mt-8">
             <div
               class="bg-cream rounded-full flex gap-2 items-center py-2 px-4"
             >
@@ -295,7 +296,6 @@
             </p>
           </div>
         </div>
-      </div>
     </section>
   </div>
 </template>
