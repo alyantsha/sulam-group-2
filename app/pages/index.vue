@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-cream min-h-screen text-black font-sans">
+  <div class="bg-cream min-h-screen text-black font-merri">
     <!-- Header / Nav -->
     <header
       class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-purple-200"
@@ -8,12 +8,15 @@
         class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between"
       >
         <div class="flex items-center gap-3">
-          <div
-            class="w-10 h-10 rounded-full bg-purple flex items-center justify-center text-white font-bold"
-          >
-            S
-          </div>
-          <div class="text-lg font-bold text-purple">The Price of Free</div>
+          <div class="w-10 h-10 rounded-full overflow-hidden">
+  <img
+    src="assets/img/logo.png"
+    alt="Logo"
+    class="w-full h-full object-cover"
+  />
+</div>
+
+          <div class="text-lg font-bold text-purple">Artificial Intelligence: Price of Free</div>
         </div>
 
         <!-- Desktop links -->
@@ -86,59 +89,204 @@
     </header>
 
     <main class="max-w-6xl mx-auto px-4 sm:px-6">
-      <!-- HERO SECTION -->
-      <section id="home" class="py-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div>
-            <h1 class="text-5xl font-extrabold text-purple">
-              The Price of Free:
-            </h1>
-            <h2 class="text-3xl md:text-4xl font-bold mt-2">
-              How Much Is Your Data Worth?
-            </h2>
+     <!-- HERO SECTION-->
+<section id="home" class="">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
-            <p class="mt-5 text-gray-700 text-lg italic">
-              In the age of Artificial Intelligence, your data is your identity.
-            </p>
+    <!-- LEFT TEXT -->
+    <div>
+      <h1 class="text-5xl font-extrabold text-purple
+      font-merri text-4xl font-bold">
+        The Price of Free:
+      </h1>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2 text-black">
+        How Much Is Your Data Worth?
+      </h2>
 
-            <p class="mt-6 text-gray-700 max-w-xl">
-              Every online action teaches AI something about you. This website
-              uncovers how data powers AI systems and how your digital choices
-              shape the algorithms around you.
-            </p>
+      <p class="mt-5 text-gray-700 text-lg italic">
+        In the age of Artificial Intelligence, your data is your identity.
+      </p>
 
-            <p class="mt-6 text-gray-700 max-w-xl">
-              Learn what data AI uses, why it matters, and how small choices
-              shape the systems around us. Play the interactive "Would You Trade
-              It?" experience and reflect on your digital footprint.
-            </p>
-            <div class="mt-8 flex gap-4 flex-wrap">
-              <a
-                href="#game"
-                class="bg-purple text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-700"
-              >
-                Play Interactive Game
-              </a>
-              <a
-                href="#pledge"
-                class="border border-purple text-purple px-6 py-3 rounded-full hover:bg-purple-light hover:text-white font-semibold"
-              >
-                Make a Pledge
-              </a>
-            </div>
-          </div>
-          <!-- bg nak warna apa do -->
-          <div class="flex justify-center">
-            <div
-              class="bg-white rounded-3xl shadow p-6 h-64 w-full flex flex-col items-center justify-center"
-            >
-              <p class="text-gray-500 text-center">
-                (Insert your infographic or booth image here)
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <p class="mt-6 text-gray-700 max-w-xl">
+        Every online action teaches AI something about you. This website
+        uncovers how data powers AI systems and how your digital choices shape
+        the algorithms around you.
+      </p>
+
+      <p class="mt-6 text-gray-700 max-w-xl">
+        Learn what data AI uses, why it matters, and how small choices shape the
+        systems around us. Play the interactive "Would You Trade It?"
+        experience and reflect on your digital footprint.
+      </p>
+
+      <div class="mt-8 flex gap-4 flex-wrap">
+        <a
+          href="#game"
+          class="bg-purple text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-700"
+        >
+          Play Interactive Game
+        </a>
+        <a
+          href="#pledge"
+          class="border border-purple text-purple px-6 py-3 rounded-full hover:bg-purple-light hover:text-white font-semibold"
+        >
+          Make a Pledge
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE (similar style to reference layout) -->
+    <div class="relative flex justify-center items-center">
+      <!-- soft glow using your theme colors -->
+      <div class="absolute inset-0 bg-gradient-to-r from-purple-300/40 via-pink-300/40 to-cyan-300/40 blur-3xl"></div>
+
+      <img
+        src="assets/img/ai.png"
+        alt="AI visual"
+        class="relative w-full max-w-lg drop-shadow-xl rounded-xl"
+      />
+    </div>
+
+  </div>
+</section>
+
+<!-- What is AI --> 
+<section id="what-is-ai" class="py-10 max-w-7xl mx-auto px-4">
+  <!-- Heading -->
+  <div class="text-center mb-10">
+    <h3 class="text-3xl font-bold text-purple">What is Artificial Intelligence?</h3>
+    <p class="mt-4 text-gray-700 max-w-3xl mx-auto">
+      Artificial Intelligence (AI) are systems that perform tasks that
+          normally require human intelligence such as recognising images,
+          translating language, or recommending content. Many AI systems are
+          trained using data created by people: photos, clicks, text and
+          location.
+    </p>
+  </div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Card 1 -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 border border-purple-100 hover:shadow-purple-200 transition">
+      <h4 class="text-xl font-bold text-purple">Machine Learning</h4>
+      <p class="mt-3 text-gray-600">
+        Models learn patterns from many examples (data).
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 border border-purple-100 hover:shadow-purple-200 transition">
+      <h4 class="text-xl font-bold text-purple">Computer Vision</h4>
+      <p class="mt-3 text-gray-600">
+        AI that understands images and video.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 border border-purple-100 hover:shadow-purple-200 transition">
+      <h4 class="text-xl font-bold text-purple">Natural Language Processing</h4>
+      <p class="mt-3 text-gray-600">
+        AI systems that understand or generate text and speech.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Images Grid -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6" style="margin-top: 40px;">
+    <!-- Left large image --> 
+      <div class="rounded-2xl overflow-hidden">
+        <img src="assets/img/ai1.jpg" alt="AI at work" class=" w-full h-full object-cover">
+      </div>
+
+    <!-- Center large image -->
+    <div class="grid grid-rows-2 gap-6">
+    <div class="rounded-2xl overflow-hidden">
+      <img src="assets/img/a3.jpg" alt="Person working on laptop" class=" object-cover">
+    </div>
+    <div class="rounded-2xl overflow-hidden">
+        <img src="assets/img/a5.jpg" alt="Robot AI" class="object-cover">
+      </div>
+    </div>
+
+    <!-- Right two stacked images -->
+      <div class="rounded-2xl overflow-hidden">
+        <img src="assets/img/a4.jpg" alt="AI at work" class="w-full h-full object-cover">
+      </div>
+  </div>
+</section>      
+
+<!-- FEATURE CARDS SECTION (New) -->
+<section class="py-16">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Card 1 -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 border border-purple-100 hover:shadow-purple-200 transition">
+      <h4 class="text-xl font-bold text-purple">Machine Learning</h4>
+      <p class="mt-3 text-gray-600">
+        Models learn patterns from many examples (data).
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 border border-purple-100 hover:shadow-purple-200 transition">
+      <h4 class="text-xl font-bold text-purple">Computer Vision</h4>
+      <p class="mt-3 text-gray-600">
+        AI that understands images and video.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 border border-purple-100 hover:shadow-purple-200 transition">
+      <h4 class="text-xl font-bold text-purple">Natural Language Processing</h4>
+      <p class="mt-3 text-gray-600">
+        AI systems that understand or generate text and speech.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- AI PRIVACY SECTION (Inspired by Reference Layout) -->
+<section id="privacy" class="py-20">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+    <!-- LEFT TEXT -->
+    <div>
+      <h3 class="text-4xl font-bold text-purple mb-4">
+        AI Privacy
+      </h3>
+
+      <p class="text-gray-700 text-lg leading-relaxed max-w-xl">
+        AI protects human privacy by anonymizing sensitive data, encrypting
+        communications, and using techniques such as differential privacy
+        to prevent personal identification.
+      </p>
+
+      <p class="mt-5 text-gray-700 max-w-xl">
+        As AI systems become more integrated into daily life, ensuring the
+        safety and security of personal information becomes even more crucial.
+        Understanding how your data is handled can help you make safer digital
+        choices.
+      </p>
+    </div>
+
+    <!-- RIGHT IMAGE + GLOW EFFECT -->
+    <div class="relative flex justify-center">
+      <!-- Soft glow in your theme colors -->
+      <div class="absolute inset-0 bg-gradient-to-r from-purple-300/40 via-pink-300/40 to-cyan-300/40 blur-3xl rounded-full"></div>
+
+      <!-- IMAGE (replace with your image if needed) -->
+      <img
+        src="assets/img/ai-privacy.jpg"
+        alt="AI Privacy Visual"
+        class="relative w-full max-w-lg rounded-xl shadow-xl"
+      />
+    </div>
+
+  </div>
+</section>
+
+
       <section class="py-10" id="color-palette">
         <!-- 
         generate based this
@@ -186,42 +334,6 @@
             class="w-16 h-16 bg-bg-purple rounded-lg shadow flex items-center justify-center text-white font-semibold"
           >
             BG-PURPLE
-          </div>
-        </div>
-      </section>
-      <!-- What is AI -->
-      <section id="what-is-ai" class="py-10">
-        <h3 class="text-3xl font-bold text-purple">
-          What is Artificial Intelligence?
-        </h3>
-        <p class="mt-4 text-gray-700 max-w-3xl">
-          Artificial Intelligence (AI) are systems that perform tasks that
-          normally require human intelligence such as recognising images,
-          translating language, or recommending content. Many AI systems are
-          trained using data created by people: photos, clicks, text and
-          location.
-        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-          <div class="bg-white p-5 rounded-2xl shadow">
-            <h4 class="font-semibold text-purple">Machine Learning</h4>
-            <p class="mt-2 text-gray-600">
-              Models learn patterns from many examples (data).
-            </p>
-          </div>
-          <div class="bg-white p-5 rounded-2xl shadow">
-            <h4 class="font-semibold text-purple">Computer Vision</h4>
-            <p class="mt-2 text-gray-600">
-              AI that understands images and video.
-            </p>
-          </div>
-          <div class="bg-white p-5 rounded-2xl shadow">
-            <h4 class="font-semibold text-purple">
-              Natural Language Processing
-            </h4>
-            <p class="mt-2 text-gray-600">
-              AI systems that understand or generate text and speech.
-            </p>
           </div>
         </div>
       </section>
@@ -522,5 +634,23 @@ html {
 /* ensure iframe border looks subtle on dark mode etc. */
 iframe {
   border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.hero-image {
+  /* helper if you want to reuse */
+}
+.stat-badge {
+  min-width: 88px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  /* slightly lift hero spacing on medium+ screens */
+  .stat-badge { min-width: 110px; }
 }
 </style>

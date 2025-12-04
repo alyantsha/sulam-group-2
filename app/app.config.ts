@@ -3,5 +3,10 @@ export default defineAppConfig({
         colors: {
             primary: "cream"
         }
+    },
+    extend: {
+        fontFamily: {
+            merri: ["Merriweather", "serif"],
+        }
     }
 })

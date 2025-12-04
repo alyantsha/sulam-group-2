@@ -1,7 +1,11 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
 
 @theme {
+  --font-primary: 'Merriweather', serif;
+
   --color-cream: #fffaeb;
   --color-bg-dark: #0A0220;        /* Deep space-like background */
   --color-bg-purple: #1B0A40;      /* Dark purple backdrop */
@@ -17,4 +21,7 @@
 
   --color-white: #FFFFFF;          /* Text and stars */
   --color-gray: #CFCFCF;  
+}
+body {
+  font-family: var(--font-primary);
 }
